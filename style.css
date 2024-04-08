@@ -41,6 +41,11 @@ body
     margin-bottom: 20%;
 }
 
+.main:hover
+{
+  scale: 1.1;
+}
+
 .head-card
 {
     display: flex;
@@ -143,19 +148,23 @@ body
 .containerOne:hover {
   background-color: #000000;
   transition-duration: .3s;
+  scale: 1.1;
 }
 .containerTwo:hover {
     background-color: #000000;
     transition-duration: .3s;
+    scale: 1.1;
 }
 .containerThree:hover {
     background-color: #000000;
     transition-duration: .3s;
+    scale: 1.1;
 }
 
 .containerFour:hover {
     background-color: #000000;
     transition-duration: .3s;
+    scale: 1.1;
 }
 
 .socialContainer:active {
