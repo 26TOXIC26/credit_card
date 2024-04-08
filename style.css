@@ -8,20 +8,37 @@
 
 body
 {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
+    height: 100vh;
+    /* width: 100vw; */
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, black, white);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* border: 2px solid red; */
 }
 
 .main
 {
     border: 1px solid black;
-    border-radius: 10px;
-    width: 450px;
-    height: 250px;
-    margin-top: 25%;
-    background-color: white;
+    border-radius: 20px;
+    width: 400px;
+    height: 240px;
+    margin-top: 17%;
+    background:
+    conic-gradient(at 62.5% 12.5%, #000000 25%, #0000 0) calc(26px/-8) calc(26px/2),
+    conic-gradient(at 62.5% 12.5%, #000000 25%, #0000 0) calc(-3*26px/8) calc(26px/4),
+    conic-gradient(at 87.5% 62.5%, #000000 25%, #0000 0) calc(3*26px/8) calc(26px/4),
+    conic-gradient(at 87.5% 62.5%, #000000 25%, #0000 0) calc(26px/-8) 0,
+    conic-gradient(at 25% 12.5%, #000000 25%, #0000 0) 0 calc(26px/-4),
+    conic-gradient(at 25% 12.5%, #000000 25%, #0000 0) calc(26px/-4) 0,
+    conic-gradient(at 87.5% 87.5%, #000000 25%, #0000 0) calc(26px/8) 0
+    #0f0d0f;
+    background-size: 26px 26px;
+    color: white;
+    margin-bottom: 20%;
 }
 
 .head-card
@@ -35,12 +52,14 @@ body
 {
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 7px;
 }
 
 .master-logo
 {
-    width: 15%;
+    width: 20%;
     height: 10%;
     margin-right: 8px;
 }
@@ -49,6 +68,138 @@ body
 {
     width: 15%;
     height: 45px;
-    margin-right: 10px;
+    margin-right: 20px;
     /* margin-top: 5px; */
 }
+
+.number-title
+{
+    /* display:flex; */
+    /* align-items: center; */
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: -20px;
+}
+
+.number
+{
+    margin-left: 30px;
+}
+
+.name
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: -15px;
+}
+
+.user
+{
+    font-size: large;
+}
+
+.valid
+{
+    font-size: medium;
+    /* margin-right: 10px; */
+}
+
+.card {
+  width: 400px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background:
+  conic-gradient(at 62.5% 12.5%, #000000 25%, #0000 0) calc(26px/-8) calc(26px/2),
+  conic-gradient(at 62.5% 12.5%, #000000 25%, #0000 0) calc(-3*26px/8) calc(26px/4),
+  conic-gradient(at 87.5% 62.5%, #000000 25%, #0000 0) calc(3*26px/8) calc(26px/4),
+  conic-gradient(at 87.5% 62.5%, #000000 25%, #0000 0) calc(26px/-8) 0,
+  conic-gradient(at 25% 12.5%, #000000 25%, #0000 0) 0 calc(26px/-4),
+  conic-gradient(at 25% 12.5%, #000000 25%, #0000 0) calc(26px/-4) 0,
+  conic-gradient(at 87.5% 87.5%, #000000 25%, #0000 0) calc(26px/8) 0
+  #0f0d0f;
+  background-size: 26px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  /* overflow: hidden; */
+  transition-duration: .3s;
+}
+
+.containerOne:hover {
+  background-color: #000000;
+  transition-duration: .3s;
+}
+.containerTwo:hover {
+    background-color: #000000;
+    transition-duration: .3s;
+}
+.containerThree:hover {
+    background-color: #000000;
+    transition-duration: .3s;
+}
+
+.containerFour:hover {
+    background-color: #000000;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.githubSVG
+{
+    width: 24px;
+}
+
+.socialSvg path {
+  fill: #ffffff;
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+.socialContainer:hover .instagramSvg path{
+  fill: rgb(214, 16, 148);
+}
+.socialContainer:hover .linkdinSvg path{
+  fill: rgb(0, 64, 182);
+}
+.socialContainer:hover .whatsappSvg path{
+  fill: #25D366;
+}
+
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
