@@ -43,7 +43,7 @@ body
 
 .main:hover
 {
-  scale: 3;
+  scale: 1.1;
 }
 
 .head-card
